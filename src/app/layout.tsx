@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { nunito } from "@/utils/fonts"
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={nunito.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={nunito.className} >
+        <main className="bg-rsa-cinza flex flex-col items-center gap-8">
+          <Header />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
