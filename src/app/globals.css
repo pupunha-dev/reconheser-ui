@@ -4,14 +4,14 @@
 
 .btt-primary {
   @apply bg-rsa-amarelo text-rsa-azul-2 rounded-xl py-4 border-b-4 border-b-yellow-500
-  font-black text-base tracking-tight w-[300px] active:border-0 active:mt-1 ease-out duration-75
+  font-black text-base tracking-tight w-full active:border-0 active:mt-1 ease-out duration-75
 }
 .btt-secondary {
   @apply bg-white text-rsa-azul-1 rounded-xl py-4 border-b-4 border-b-zinc-200 border-2
-  border-zinc-200 font-black text-base tracking-tight w-[300px] active:border-b-2 active:mt-1
+  border-zinc-200 font-black text-base tracking-tight w-full active:border-b-2 active:mt-1
   hover:bg-rsa-cinza ease-out duration-75
 }
 .btt-alert {
   @apply bg-rsa-coral text-white rounded-xl py-4 border-b-4 border-b-red-500
-  font-black text-base tracking-tight w-[300px] active:border-b-0 active:mt-1 ease-out duration-75
+  font-black text-base tracking-tight w-full active:border-b-0 active:mt-1 ease-out duration-75
 }

@@ -6,7 +6,7 @@ import { Avatar } from "./Avatar"
 
 export const Header = () => {
   return (
-    <header className="w-4/6 flex justify-between bg-white mt-4 rounded-md px-8 py-4 items-center
+    <header className="w-4/5 flex justify-between bg-white mt-4 rounded-md px-8 py-4 items-center
      text-zinc-800 shadow-md">
       <div className="flex items-center w-3/5 gap-12">
         <div className="relative w-[100px] h-[100px]">

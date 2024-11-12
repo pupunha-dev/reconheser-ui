@@ -1,7 +1,15 @@
+import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { HeaderEffect1 } from "@/components/TextHeaders";
 import { Atom, FileType } from "lucide-react";
 import Link from "next/link";
+import imgDog from "./../public/Bolt - Foto.svg"
+import imgCat from "./../public/Gato - Foto.svg"
+import imgOrang from "./../public/Orangotango - Foto.svg"
+import avatarDaniel from "./../public/Daniel - Avatar.svg"
+import avatarCanil from "./../public/Canil - Avatar.svg"
+import avatarZoo from "./../public/Zoo - Avatar.svg"
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -67,28 +75,48 @@ export default function Home() {
       </Section>
 
       {/* Seção Elementos  */}
-      <Section className="bg-white" id="segunda">
+      <Section className="bg-white" id="elementos">
         <div className="flex flex-col gap-6">
+
           <div className="flex items-center gap-2 text-rsa-azul-2">
             <Atom /><HeaderEffect1 text={"Elementos"} e1={true} />
           </div>
+
           <div className="px-2">
             <h1 className="text-xl font-bold text-zinc-700">Botões</h1>
           </div>
-          <div className="flex justify-between">
-            <div className="w-1/3">
+
+          <div className="flex justify-between gap-6">
+            <div className="w-1/3 h-14">
               <button className="btt-primary">QUERO ADOTAR</button>
             </div>
-            <div className="w-1/3">
+            <div className="w-1/3 h-14">
               <button className="btt-secondary">FALAR COM O CUIDADOR</button>
             </div>
-            <div className="w-1/3">
+            <div className="w-1/3 h-14">
               <button className="btt-alert">CANCELAR PEDIDO</button>
             </div>
           </div>
 
+          <div className="px-2">
+            <h1 className="text-xl font-bold text-zinc-700">Cards</h1>
+          </div>
+
+          <div className="flex justify-between">
+            <Card imagemPet={imgDog} altPet={"Foto do Caramelo"} nomePet={"Caramelo"}
+              cuidadorNome={"Daniel S. Melo"} cuidadorStatus={"Cuidador"} cuidadorAvatar={avatarDaniel} cuidadorAlt={"Daniel S. Melo"} dataPet={"11/10/2024"} localidade={"Lapa-PR"} idadePet={"Filhote"} urlDetalhes={""} />
+
+            <Card imagemPet={imgCat} altPet={"Foto do Magrelo"} nomePet={"Magrelo"}
+              cuidadorNome={"Meira Pets"} cuidadorStatus={"Canil"} cuidadorAvatar={avatarCanil} cuidadorAlt={"Canil Meira Pets"} dataPet={"01/05/2024"} localidade={"Itajaí-SC"} idadePet={"Adulto"} urlDetalhes={""} />
+
+            <Card imagemPet={imgOrang} altPet={"Foto do Morangotango"} nomePet={"Morangotango"}
+              cuidadorNome={"Zoo Matriz "} cuidadorStatus={"Zoológico"} cuidadorAvatar={avatarZoo} cuidadorAlt={"Daniel S. Melo"} dataPet={"16/08/2022"} localidade={"Vigia-PA"} idadePet={"Jovem"} urlDetalhes={""} />
+          </div>
+
         </div>
       </Section>
+
+      <Footer />
     </>
   );
 }

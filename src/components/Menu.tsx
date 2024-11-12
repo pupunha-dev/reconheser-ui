@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 export const Menu = () => {
-  const linksMenu = ['Tipografia e Cores', 'Segunda', 'Pets', 'Contato'];
+  const linksMenu = ['Tipografia e Cores', 'Elementos', 'Contato'];
   return (
     <ul className="flex gap-6">
       {linksMenu.map((links, i) => (

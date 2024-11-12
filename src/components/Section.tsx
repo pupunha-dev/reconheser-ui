@@ -6,7 +6,7 @@ interface ISection {
 
 export const Section = (props: ISection) => {
   return (
-    <section className={`${props.className} p-10 rounded-md w-4/6 min-h-screen shadow-md`} id={props.id}>
+    <section className={`${props.className} p-10 rounded-md w-4/5 min-h-screen shadow-md`} id={props.id}>
       {props.children}
     </section>
   )
