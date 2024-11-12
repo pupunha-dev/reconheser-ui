@@ -23,20 +23,24 @@ export default function Home() {
           <div className="px-2">
             <p className="text-lg">Enquanto não consigo as fontes oficiais, optei por usar <b>Nunito</b>, uma das minhas favoritas muito parecida com a fonte do Duolingo. 😎</p>
           </div>
-          <div className="px-2 flex justify-between">
-            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center">
+          <div className="px-2 flex sm:flex-row flex-col justify-between gap-4">
+            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center
+            w-full sm:w-1/4">
               <span className="text-sm">text-sm / font-thin</span>
               <p className="text-sm font-thin">ReconheSer Animal</p>
             </div>
-            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center">
+            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center
+             w-full sm:w-1/4">
               <span className="text-sm">text-lg / font-semibold</span>
               <p className="text-lg font-semibold">ReconheSer Animal</p>
             </div>
-            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center">
+            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center
+             w-full sm:w-1/4">
               <span className="text-sm">text-xl / font-bold</span>
               <p className="text-xl font-bold">ReconheSer Animal</p>
             </div>
-            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center">
+            <div className="flex flex-col bg-rsa-cinza rounded-md p-4 items-center justify-center
+             w-full sm:w-1/4">
               <span className="text-sm">text-2xl / font-black</span>
               <p className="text-2xl font-black">ReconheSer Animal</p>
             </div>
@@ -51,23 +55,23 @@ export default function Home() {
               muito bem com os elementos que podem ser usados na aplicação, conforme veremos nas seções seguintes.
             </p>
           </div>
-          <div className="flex">
-            <div className="w-1/6 bg-rsa-amarelo py-8 flex justify-center">
+          <div className="flex sm:flex-row flex-col gap-4">
+            <div className="w-full sm:w-1/6 bg-rsa-amarelo py-8 flex justify-center">
               <p className="text-sm font-semibold text-zinc-700">#FFDF58</p>
             </div>
-            <div className="w-1/6 bg-rsa-azul-1 py-8 flex justify-center">
+            <div className="w-full sm:w-1/6 bg-rsa-azul-1 py-8 flex justify-center">
               <p className="text-sm font-semibold text-white">#03989E</p>
             </div>
-            <div className="w-1/6 bg-rsa-cinza py-8 flex justify-center">
+            <div className="w-full sm:w-1/6 bg-rsa-cinza py-8 flex justify-center">
               <p className="text-sm font-semibold text-zinc-700">#F0F0F0</p>
             </div>
-            <div className="w-1/6 bg-rsa-azul-2 py-8 flex justify-center">
+            <div className="w-full sm:w-1/6 bg-rsa-azul-2 py-8 flex justify-center">
               <p className="text-sm font-semibold text-white">#003C4F</p>
             </div>
-            <div className="w-1/6 bg-rsa-coral py-8 flex justify-center">
+            <div className="w-full sm:w-1/6 bg-rsa-coral py-8 flex justify-center">
               <p className="text-sm font-semibold text-white">#FF6B6B</p>
             </div>
-            <div className="w-1/6 bg-white py-8 flex justify-center border">
+            <div className="w-full sm:w-1/6 bg-white py-8 flex justify-center border">
               <p className="text-sm font-semibold text-zinc-700">#FFFFFF</p>
             </div>
           </div>
@@ -86,14 +90,14 @@ export default function Home() {
             <h1 className="text-xl font-bold text-zinc-700">Botões</h1>
           </div>
 
-          <div className="flex justify-between gap-6">
-            <div className="w-1/3 h-14">
+          <div className="flex justify-between gap-6 sm:flex-row flex-col">
+            <div className="w-full sm:w-1/3 h-14">
               <button className="btt-primary">QUERO ADOTAR</button>
             </div>
-            <div className="w-1/3 h-14">
+            <div className="w-full sm:w-1/3 h-14">
               <button className="btt-secondary">FALAR COM O CUIDADOR</button>
             </div>
-            <div className="w-1/3 h-14">
+            <div className="w-full sm:w-1/3 h-14">
               <button className="btt-alert">CANCELAR PEDIDO</button>
             </div>
           </div>
@@ -102,7 +106,7 @@ export default function Home() {
             <h1 className="text-xl font-bold text-zinc-700">Cards</h1>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex sm:flex-row flex-col justify-between gap-8 sm:gap-0">
             <Card imagemPet={imgDog} altPet={"Foto do Caramelo"} nomePet={"Caramelo"}
               cuidadorNome={"Daniel S. Melo"} cuidadorStatus={"Cuidador"} cuidadorAvatar={avatarDaniel} cuidadorAlt={"Daniel S. Melo"} dataPet={"11/10/2024"} localidade={"Lapa-PR"} idadePet={"Filhote"} urlDetalhes={""} />
 
